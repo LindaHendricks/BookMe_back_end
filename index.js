@@ -5,7 +5,7 @@ const createProfileForm = document.querySelector(`form#createprofile`)
 
 createProfileForm.addEventListener(`submit`, event => {
 event.preventDefault()
-// console.log("submit", event.target)
+console.log("submit", event.target)
 
 const inputName = document.querySelector(`#fname`)
 const inputAge = document.querySelector(`#lage`)
@@ -121,7 +121,7 @@ div.addEventListener('click', event => {
             newName.innerText = response.name
 
             // const newAge = docuemt.querySelector(`body > div.info > div > p.age`)
-            // console.log(newAge)
+            console.log(newAge)
             // newAge.textContent = response.age
             const newAge = document.querySelector(`p.age`)
             newAge.textContent = response.age
